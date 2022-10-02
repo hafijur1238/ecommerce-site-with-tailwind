@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         barlow: "'Barlow', sans-serif",
         lato: "'Lato', sans-serif"
+      },
+      colors: {
+        'primary': '#FD3D57'
       }
     },
   },
