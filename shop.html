@@ -106,7 +106,7 @@
             <!-- link navbar -->
             <div class="flex items-center justify-between flex-grow pl-12">
                 <div class="flex items-center space-x-6 capitalize">
-                    <a href="#" class="text-gray-200 hover:text-white transition">Home</a>
+                    <a href="index.html" class="text-gray-200 hover:text-white transition">Home</a>
                     <a href="#" class="text-gray-200 hover:text-white transition">Shop</a>
                     <a href="#" class="text-gray-200 hover:text-white transition">About US</a>
                     <a href="#" class="text-gray-200 hover:text-white transition">Contact US</a>
@@ -203,6 +203,79 @@
                     </div>
                 </div>
                 <!-- end of category filter -->
+                <!-- price filter -->
+                <div class="pt-4">
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Price</h3>
+                    <div class="mt-4 flex items-center">
+                        <input type="text"
+                            class="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-800 text-sm shadow-sm rounded"
+                            placeholder="Min">
+                        <span class="mx-3 text-gray-500">-</span>
+                        <input type="text"
+                            class="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-800 text-sm shadow-sm rounded"
+                            placeholder="Max">
+                    </div>
+                </div>
+                <!-- end of price filter  -->
+
+                <!-- size filter -->
+                <div class="pt-4">
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Price</h3>
+                    <div class="flex items-center gap-2">
+                        <div class="size-selector">
+                            <input type="radio" name="size" class="hidden" id="size-xs">
+                            <label for="size-xs"
+                                class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-800">XS</label>
+                        </div>
+                        <div class="size-selector">
+                            <input type="radio" name="size" class="hidden" id="size-s">
+                            <label for="size-s"
+                                class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-800">S</label>
+                        </div>
+                        <div class="size-selector">
+                            <input type="radio" name="size" class="hidden" id="size-m">
+                            <label for="size-m"
+                                class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-800">M</label>
+                        </div>
+                        <div class="size-selector">
+                            <input type="radio" name="size" class="hidden" id="size-l">
+                            <label for="size-l"
+                                class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-800">L</label>
+                        </div>
+                        <div class="size-selector">
+                            <input type="radio" name="size" class="hidden" id="size-2xs">
+                            <label for="size-2xs"
+                                class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-800">2XS</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of size filter -->
+
+                <!-- color filter -->
+                <div class="pt-4">
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Color</h3>
+                    <div class="flex items-center gap-2">
+                        <div class="color-selector">
+                            <input type="radio" name="color" class="hidden" id="color-red">
+                            <label for="color-red"
+                                class="border border-gray-200 rounded-sm h-5 w-5 cursor-pointer shadow-sm block"
+                                style="background-color: #fc3d57;"></label>
+                        </div>
+                        <div class="color-selector">
+                            <input type="radio" name="color" class="hidden" id="color-white">
+                            <label for="color-white"
+                                class="border border-gray-200 rounded-sm h-5 w-5 cursor-pointer shadow-sm block"
+                                style="background-color: #fff;"></label>
+                        </div>
+                        <div class="color-selector">
+                            <input type="radio" name="color" class="hidden" id="color-black">
+                            <label for="color-black"
+                                class="border border-gray-200 rounded-sm h-5 w-5 cursor-pointer shadow-sm block"
+                                style="background-color: #000;"></label>
+                        </div>
+                    </div>
+                </div>
+                <!--end of color filter -->
             </div>
         </div>
         <!-- end of side bar  -->
