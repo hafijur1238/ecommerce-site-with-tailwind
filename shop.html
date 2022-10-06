@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAFCART</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="py-4 shadow-sm bg-white">
+        <div class="container flex items-center justify-between">
+            <!-- logo -->
+            <a href="#">
+                <img src="images/logo.svg" class="w-32">
+            </a>
+            <!-- end of logo  -->
+            <!-- searchbar  -->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text"
+                    class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+                    placeholder="Search">
+                <button
+                    class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">SEARCH</button>
+            </div>
+            <!-- end of searchbar  -->
+            <!-- icon -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wish List</div>
+                    <span
+                        class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-3">Card</div>
+                    <span
+                        class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+                </a>
+            </div>
+            <!-- end of header icon  -->
+
+        </div>
+    </header>
+    <!-- end of header  -->
+
+    <!-- navbar -->
+    <nav class="bg-gray-800">
+        <div class="container flex">
+            <!-- all category  -->
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">All Categories</span>
+
+                <div
+                    class="absolute w-full left-0 top-full bg-white shadow py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="icons/bed.svg" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="icons/sofa.svg" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="icons/office.svg" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-gray-600 text-sm">Office</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="icons/terrace.svg" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="icons/bed-2.svg" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-gray-600 text-sm">Mattress</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="icons/restaurant.svg" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-gray-600 text-sm">Dining</span>
+                    </a>
+                </div>
+            </div>
+            <!-- end of all category  -->
+            <!-- link navbar -->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="#" class="text-gray-200 hover:text-white transition">Home</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">Shop</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">About US</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">Contact US</a>
+                </div>
+                <a href="#" class="text-gray-200 hover:text-white transition">Login/Register</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- shop logo -->
+    <div class="container py-4 flex items-center gap-3">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fas fa-home"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-barlow">Shop</p>
+    </div>
+    <!-- end of shop logo -->
+    <!-- shop wrapper -->
+    <div class="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
+        <!-- side bar -->
+        <div class="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
+            <div class="divide-y divide-gray-200 space-y-5">
+                <!-- category filter -->
+                <div>
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Categories</h3>
+                    <div class="space-y-2">
+                        <!-- single -->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1"
+                                class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Bedroom</label>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <!-- single -->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1"
+                                class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Spfa</label>
+                            <div class="ml-auto text-gray-600 text-sm">(11)</div>
+                        </div>
+                        <!-- single -->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1"
+                                class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Office</label>
+                            <div class="ml-auto text-gray-600 text-sm">(12)</div>
+                        </div>
+                        <!-- single -->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1"
+                                class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Outdoor</label>
+                            <div class="ml-auto text-gray-600 text-sm">(20)</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of category filter -->
+                <!-- category filter -->
+                <div class="pt-4">
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Brands</h3>
+                    <div class="space-y-2">
+                        <!-- single -->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1"
+                                class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Dominik</label>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <!-- single -->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1"
+                                class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Nadia</label>
+                            <div class="ml-auto text-gray-600 text-sm">(11)</div>
+                        </div>
+                        <!-- single -->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1"
+                                class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Otobi</label>
+                            <div class="ml-auto text-gray-600 text-sm">(12)</div>
+                        </div>
+                        <!-- single -->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1"
+                                class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Hatil</label>
+                            <div class="ml-auto text-gray-600 text-sm">(20)</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of category filter -->
+            </div>
+        </div>
+        <!-- end of side bar  -->
+    </div>
+    <!-- end of shop wrapper -->
+    <!-- footer -->
+    <footer class="bg-white pt-16 pb-12 border-t border-gray-100"></footer>
+    <div class="bg-gray-800 py-4">
+        <div class="container flex items-center justify-between">
+            <p class="text-white">&copy; CopyRight 2022. Made By Hafijur Rahman</p>
+            <img src="images/methods.png" alt="">
+        </div>
+    </div>
+    <!-- end of footer -->
+
+</body>
+
+</html>
